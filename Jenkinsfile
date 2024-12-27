@@ -1,4 +1,4 @@
-@Library('jenkins-shared-library') _
+@Library('Jenkins-shared-library') _
 
 // create variable of map type and set the values
 
