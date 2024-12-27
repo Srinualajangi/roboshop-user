@@ -9,7 +9,7 @@ def configMap = [
 echo "test:"
 
 // Manually set the branch name for testing
-env.BRANCH_NAME = 'feature-branch' // Replace with the actual branch name you are testing with
+env.BRANCH_NAME = env.BRANCH_NAME ?: env.GIT_BRANCH ?: 'feature-branch' // Replace with the actual branch name you are testing with
 
 echo "Branch name: ${env.BRANCH_NAME}"
 
