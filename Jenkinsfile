@@ -7,6 +7,10 @@ def configMap = [
 ]
 
 echo "test:"
+
+// Manually set the branch name for testing
+env.BRANCH_NAME = 'feature-branch' // Replace with the actual branch name you are testing with
+
 echo "Branch name: ${env.BRANCH_NAME}"
 
 if (env.BRANCH_NAME != null) {
